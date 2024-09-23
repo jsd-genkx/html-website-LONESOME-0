@@ -1,3 +1,3 @@
 # My first project
 
-first commit
+first commit!
