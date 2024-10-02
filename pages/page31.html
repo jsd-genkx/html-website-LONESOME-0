@@ -6,9 +6,109 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Page 31</title>
     </head>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.image-slider img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+    </style>
     <body>
-        <h1>This is Page 31</h1>
+        <header>
+            <h1>FRONK This is Page 31 </h1>
+            <nav>
+                <ul>
+                    <li><a href="#gallery">แกลเลอรี</a></li>
+                    <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="gallery">
+                <h2>แกลเลอรี</h2>
+                <div class="image-slider">
+                    <img src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t39.30808-6/378117117_789145743213617_8045132865454013199_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5Brk3r_OpQsQ7kNvgEQxnOX&_nc_ht=scontent.fbkk12-3.fna&_nc_gid=Ar2pkldE2tztFGOoqoM1mzK&oh=00_AYAn-GIvHoFH6DoWdiw1Z6pFHLgEnfnFeGkkeaknm-El1Q&oe=66F301C6" alt="ภาพที่ 1">
+                    <img src="https://scontent.fbkk9-2.fna.fbcdn.net/v/t39.30808-6/427897980_893490712779119_8381066699911428685_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CZYUuqPnmPYQ7kNvgHaOFRp&_nc_ht=scontent.fbkk9-2.fna&oh=00_AYBRu60SXmZlBEss0DEiItL6s1eADIlEyKKd5nKz2ndAZg&oe=66F2DE53" alt="ภาพที่ 2">
+                   
+                </div>
+            </section>
+    
+            <section id="about">
+                <h2>เกี่ยวกับ Jamie</h2>
+                <p>FRONK เป็นช่างภาพอิสระที่เชี่ยวชาญด้านการถ่ายภาพบุคคลและธรรมชาติ...</p>
+            </section>
+    
+            <section id="contact">
+                <h2>ติดต่อเรา</h2>
+                <form>
+                    <label for="name">ชื่อ:</label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" required>
+                    
+                    <label for="message">ข้อความ:</label>
+                    <textarea id="message" required></textarea>
+                    
+                    <button type="submit">ส่งข้อความ</button>
+                </form>
+            </section>
+        </main>
         <a href="/">Back to Landing Page</a>
+        <footer>
+            <p>© 2024 FRONK</p>
+        </footer>
     </body>
     </html>
   
