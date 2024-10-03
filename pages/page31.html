@@ -1,114 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Page 31</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIWAKRIT PATTAVEESIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!-- Favicon -->
+    <link rel="shortcut icon" href="https://scontent.fbkk12-1.fna.fbcdn.net/v/t39.30808-6/461383014_1052153463579509_2719517988622046195_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OrvSgSHuuDMQ7kNvgE3bdRj&_nc_ht=scontent.fbkk12-1.fna&oh=00_AYDdvNyJI5Ou5K8TFEWZ5xMyC0ZsVSdW1SGN1Q55ivcsVQ&oe=67033C9F" type="image/x-icon">
+</head>
 
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-}
+<style>
+    /* Google Font */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-header {
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
+    /* CSS Reset */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: "Poppins", sans-serif;
+    }
 
-h1 {
-    color: #333;
-}
+    /* CSS Variables */
+    :root {
+        --brand-color: #fa0744;
+        --linear-back: Linear-gradient(180deg,
+                rgb(0, 0, 0) 0%,
+                rgb(248, 5, 5) 100%);
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+    }
 
-nav a {
-    text-decoration: none;
-    color: #555;
-}
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-main {
-    padding: 20px;
-}
+    li {
+        list-style: none;
+    }
 
-section {
-    margin: 20px 0;
-}
+    /* CSS in Body */
+    body {
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
+        height: 100vh;
+        width: 100vw;
+        background: var(--linear-back);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-image: url("/img/profile1.jpg"); */
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-color: rgb(10, 10, 10);
+    }
 
-.image-slider img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-}
 
-    </style>
-    <body>
-        <header>
-            <h1>FRONK This is Page 31 </h1>
-            <nav>
-                <ul>
-                    <li><a href="#gallery">แกลเลอรี</a></li>
-                    <li><a href="#about">เกี่ยวกับเรา</a></li>
-                    <li><a href="#contact">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <main>
-            <section id="gallery">
-                <h2>แกลเลอรี</h2>
-                <div class="image-slider">
-                    <img src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t39.30808-6/378117117_789145743213617_8045132865454013199_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5Brk3r_OpQsQ7kNvgEQxnOX&_nc_ht=scontent.fbkk12-3.fna&_nc_gid=Ar2pkldE2tztFGOoqoM1mzK&oh=00_AYAn-GIvHoFH6DoWdiw1Z6pFHLgEnfnFeGkkeaknm-El1Q&oe=66F301C6" alt="ภาพที่ 1">
-                    <img src="https://scontent.fbkk9-2.fna.fbcdn.net/v/t39.30808-6/427897980_893490712779119_8381066699911428685_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CZYUuqPnmPYQ7kNvgHaOFRp&_nc_ht=scontent.fbkk9-2.fna&oh=00_AYBRu60SXmZlBEss0DEiItL6s1eADIlEyKKd5nKz2ndAZg&oe=66F2DE53" alt="ภาพที่ 2">
-                   
+    .website_container {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        padding: 1rem;
+        position: relative;
+    }
+
+    /* Sidebar */
+    .website_container .sidebar_container {
+        width: 35%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        margin-right: 1rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .sidebar_container .image {
+        height: 50%;
+        width: 100%;
+        position: relative;
+    }
+
+    .sidebar_container .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .sidebar_container .image .right_image_box {
+        width: 70%;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: -3.5rem;
+        left: -3rem;
+        transform: rotate(16deg);
+    }
+
+    .sidebar_container .image .left_image_box {
+        width: 70%;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: -3.5rem;
+        right: -3rem;
+        transform: rotate(-16deg);
+    }
+
+    .sidebar_container .sidebar_content {
+        position: absolute;
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+        padding: 0.4rem;
+    }
+
+    .sidebar_container .sidebar_content h1 {
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .sidebar_container .sidebar_content p {
+        color: var(--brand-color);
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .sidebar_container .sidebar_content .social_media {
+        margin-top: 1rem;
+    }
+
+    .sidebar_container .sidebar_content .social_media a {
+        font-size: 1.8rem;
+        margin: 0.4rem;
+        color: rgb(0, 0, 0);
+    }
+
+    .sidebar_container .sidebar_content .social_media a:hover {
+        color: var(--brand-color);
+        transition: 0.3s;
+    }
+
+
+    .sidebar_container li {
+        margin: 0.3rem 0;
+    }
+
+    .sidebar_container li a:hover,
+    .sidebar_container .active {
+        color: var(--brand-color);
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    /* Content */
+    .website_container .content_container {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        overflow-y: scroll;
+    }
+
+    .content_container::-webkit-scrollbar {
+        width: 0.2rem;
+    }
+
+    .content_container::-webkit-scrollbar-thumb {
+        width: 0.2rem;
+        background-color: gray;
+        border-radius: 0.2rem;
+    }
+
+    /* About Page */
+
+    .title {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    .title span {
+        color: var(--brand-color);
+    }
+
+    .line {
+        width: 4rem;
+        border-top: 0.35rem solid black;
+        border-radius: 0.5rem;
+    }
+
+    .about_page .about_content {
+        margin-top: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    .about_page .about_content p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    aside {
+        font-size: 8rem;
+    }
+
+    .about_profile {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.4rem;
+    }
+
+    .about_profile .left_profile {
+        width: 46%;
+    }
+
+    .about_profile .left_profile li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin: 0;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+
+    .about_profile .right_profile {
+        width: 46%;
+    }
+
+    .about_profile .right_profile li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0.5rem;
+        align-items: start;
+        font-size: 1rem;
+    }
+
+    li .profile_title {
+        padding: 0.4rem;
+        background-color: var(--brand-color);
+        color: white;
+        border-radius: 0.3rem;
+    }
+
+    /* Resume Page */
+    .resume_page .resume_container {
+        margin: 1.2rem 0;
+        display: flex;
+    }
+</style>
+
+<body>
+    <!-- Website Layout -->
+    <div class="website_container">
+
+        <!-- sidebar -->
+        <div class="sidebar_container">
+            <!-- Sidebar Image -->
+            <div class="image">
+                <img src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t39.30808-6/461383014_1052153463579509_2719517988622046195_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OrvSgSHuuDMQ7kNvgE3bdRj&_nc_ht=scontent.fbkk12-1.fna&oh=00_AYDdvNyJI5Ou5K8TFEWZ5xMyC0ZsVSdW1SGN1Q55ivcsVQ&oe=67033C9F"
+                    alt="SIWAKRIT PATTAVEESIN">
+                <div class="right_image_box"></div>
+                <div class="left_image_box"></div>
+            </div>
+
+            <!-- sidebar Content -->
+            <div class="sidebar_content">
+                <!-- Long name can be applied so easily -->
+                <h1>SIWAKRIT PATTAVEESIN</h1>
+                <p>FRONK</p>
+                <!-- Social Medias -->
+                <div class="social_media">
+                    <a href="https://www.facebook.com/SHIKAFZ" aria-label="facebook" target="_blank" target="_blank"
+                        rel="noopener"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/Siwakrit" aria-label="github" target="_blank" target="_blank"
+                        rel="noopener"><i class="fab fa-github"></i></a>
                 </div>
-            </section>
-    
-            <section id="about">
-                <h2>เกี่ยวกับ Jamie</h2>
-                <p>FRONK เป็นช่างภาพอิสระที่เชี่ยวชาญด้านการถ่ายภาพบุคคลและธรรมชาติ...</p>
-            </section>
-    
-            <section id="contact">
-                <h2>ติดต่อเรา</h2>
-                <form>
-                    <label for="name">ชื่อ:</label>
-                    <input type="text" id="name" required>
-                    
-                    <label for="email">อีเมล:</label>
-                    <input type="email" id="email" required>
-                    
-                    <label for="message">ข้อความ:</label>
-                    <textarea id="message" required></textarea>
-                    
-                    <button type="submit">ส่งข้อความ</button>
-                </form>
-            </section>
-        </main>
-        <a href="/">Back to Landing Page</a>
-        <footer>
-            <p>© 2024 FRONK</p>
-        </footer>
-    </body>
-    </html>
-  
+            </div>
+
+        </div>
+
+        <!-- content -->
+        <div class="content_container">
+            <!-- About Page -->
+            <div class="about_page">
+                <h2 class="title">About <span>Me</span></h2>
+                <hr class="line">
+                <div class="about_content">
+                    <p class="about_text">
+                    <aside>
+                        Just do it! 🔥
+                    </aside>
+                    </p>
+                </div>
+
+                <div class="about_profile">
+                    <ul class="left_profile">
+                        <li><span class="profile_title">Why am I here?</span><br>
+                            <p>☃️Want to improve myself</p>
+                            <p>☃️Want to learn new things</p>
+                        </li>
+
+                        <li><span class="profile_title">What excites me most about this program?</span><br>
+                            <p>☃️Getting to know new friends of different ages</p>
+                            <p>☃️Answering questions in class</p>
+                        </li>
+
+                    </ul>
+
+                    <ul class="right_profile">
+                        <li><span class="profile_title">What makes me the most nervous about this program?</span><br>
+                            <p>☃️Afraid of not being able to do what I want to do in class</p>
+                            <p>☃️Afraid of not getting the job I want</p>
+                        </li>
+
+                        <li><span class="profile_title">What else should people know about me?</span><br>
+                            <p>☃️I am a relaxed and easy-going person.</p>
+                            <p>☃️I like playing football.</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
