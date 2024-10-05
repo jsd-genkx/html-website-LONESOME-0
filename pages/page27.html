@@ -4,11 +4,79 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
         <title>Page 27</title>
+        <style>
+            body {
+                font-family: "Kanit", sans-serif;
+            }
+            .profile-grid {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(3,1fr);
+                background-color: rgb(0, 0, 0);
+                width: 50%;
+                height: 50%;
+            }
+
+            .Why-am-i-here{
+                grid-area: 1/1/2/2;
+                background-color: pink;
+            }
+
+            .What-excities-me-most-about-this-program {
+                grid-area: 1/3/-3/4;
+                background-color: pink;
+            }
+
+            .pic-profile{
+                grid-area: 2/2/3/3;
+            }
+
+            .pic-profile img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .what-make-me-the-most-nervous-about-this-program {
+                grid-area: 3/1/4/2;
+                background-color: pink;
+            }
+
+            .what-else-should-people-know-about-me {
+                grid-area: 3/3/-1/-1;
+                background-color: pink;
+            }
+
+        </style>
     </head>
     <body>
+        
         <h1>My portfolio</h1>
         <p>I am Tae 🌚</p>
+
+        <div class="profile-grid">
+            <div class="Why-am-i-here">
+                <h1>Why am i here</h1>
+                <p>เพราะอยากเรียนรู้อยากศึกษาในสายงานนี้</p>
+            </div>
+            <div class="What-excities-me-most-about-this-program">
+                <h1>What excities me most about this program</h1>
+                <p>ได้เรียนรู้สิ่งใหม่ ๆ และ ได้ลองทำในสิ่งที่ไม่เคยทำ</p>
+            </div>
+            <div class="pic-profile">
+                <img src="https://mcdn.coolmate.me/image/June2023/anime-meme-cuc-hai-huoc-2083_602.jpg" alt="">
+            </div>
+            <div class="what-make-me-the-most-nervous-about-this-program">
+                <h1>what make me the most nervous about this program</h1>
+                <p>เรื่อง tecnical skill และ การเริ่มทำงานจากการย้ายสายงาน</p>
+            </div>
+            <div class="what-else-should-people-know-about-me">
+                <h1>what else should people know about me</h1>
+                <p>เป็นคนที่ดูคุยหรือเข้าถึงยากแต่จริงๆแล้วเป็นคนคุยง่ายและปรึกษาได้ทุกเรื่อง</p>
+            </div>
+
+        </div>
         <a href="/">Back to Landing Page</a>
     </body>
     </html>
