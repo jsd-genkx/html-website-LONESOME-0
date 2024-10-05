@@ -1,14 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pannawat Choosung - Personal Introduction">
+    <title>Page 22</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AFD5F0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #DAFAFA;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+            border-radius: 15px; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            background: linear-gradient(145deg, #E0FFFF, #DAFAFA); 
+        }
+        .container:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); 
+        }
+        h1, h2 {
+            color: #007BFF;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #E0FFFF;
+            padding: 10px 20px;
+            border-radius: 8px; 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a:hover {
+            background-color: #007BFF;
+            color: #fff;
+            transform: translateY(-5px); 
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); 
+        }
+        p{
+            text-align: center;
+        }
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Page 22</title>
-    </head>
-    <body>
-        <h1>This is Page 22</h1>
-        <a href="/">Back to Landing Page</a>
-    </body>
-    </html>
-  
+
+@media (max-width: 400px) {
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    p, a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .container {
+        max-width: 80%;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.75rem;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="https://cdn.discordapp.com/attachments/1150709603538063431/1290949007010435103/277078622_3118542991719715_1785514842979429946_n.jpg?ex=66fe5173&is=66fcfff3&hm=5490c4307f8dc5b9bafe7075f2bef0b72fb81ffad9c1584c4934e4d43ca49711&" alt="DomePannawat" class="profile-pic">
+        </div>
+        <h1 class="center">Pannawat Choosung (โดม)</h1>
+        <p class="center">อายุ: 24 ปี</p>
+
+        <div class="section">
+            <h2>Why am I here?</h2>
+            <p >ผมมาที่นี่เพื่อพัฒนาทักษะด้านเทคโนโลยีให้แข็งแกร่งขึ้น เพื่อเปิดโอกาสให้ตัวเองก้าวเข้าสู่สายงานที่ใฝ่ฝัน และพร้อมที่จะเรียนรู้สิ่งใหม่ๆ อยู่สม่ำสมอ</p>
+        </div>
+
+        <div class="section">
+            <h2>What excites me most about this program?</h2>
+            <p>โปรแกรมนี้จะช่วยให้ผมพัฒนาทักษะด้านเทคโนโลยีอย่างก้าวกระโดด และเปิดโอกาสในการเข้าสู่อาชีพที่ใฝ่ฝัน</p>
+        </div>
+
+        <div class="section">
+            <h2>What makes me the most nervous about this program?</h2>
+            <p>ผมกังวลว่าจะหางานที่ตรงกับความสามารถของตัวเองได้ยาก หรืออาจต้องใช้เวลานานในการหางานที่เหมาะสม</p>
+        </div>
+
+        <div class="section">
+            <h2>What else should people know about me?</h2>
+            <p>ผมเป็นคนที่มีทัศนคติเชิงบวก ชอบเรียนรู้สิ่งใหม่ๆ และสนใจในด้านเทคโนโลยี โดยเฉพาะรถยนต์และการแข่งรถ F1</p>
+        </div>
+    </div>
+
+    <a href="/">Back to Landing Page</a>
+</body>
+</html>
